@@ -16,8 +16,9 @@ Route::group(['namespace'=> 'Auth'], function () {
 });
 
 Route::group(['middleware'=>['auth:user']],function (){
-    Route::get('/dashboard', function () {
-        return view('user/dashboard');
-    });
+  Route::get('/dashboard', function () {
+          return view('user/index');
+      });
 });
+
 

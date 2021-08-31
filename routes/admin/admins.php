@@ -14,8 +14,9 @@ Route::group(['namespace'=> 'Auth'], function () {
 });
 
 Route::group(['middleware'=>['auth:admin']],function (){
-   Route::get('/dashboard', function () {
-        return view('admin/dashboard');
+
+    Route::get('/dashboard', function () {
+        return view('admin/index');
     });
 });
 
