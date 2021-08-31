@@ -16,7 +16,7 @@ class loginController extends Controller
     public function showUserLoginForm()
     {
         if (Auth::guard('user')->check()) {
-            return redirect()->intended('/user/dashboard');
+            return redirect()->intended('/dashboard');
         }
         return view('user.auth.login');
     }
@@ -31,7 +31,7 @@ class loginController extends Controller
 
         if (Auth::guard('user')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
 
-            return redirect()->intended('/user/dashboard');
+            return redirect()->intended('/dashboard');
         }
         return back()->withInput($request->only('email', 'remember'));
     }

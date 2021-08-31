@@ -42,7 +42,7 @@
                     <!-- Authentication Links -->
                     <li class="nav-item dropdown">
                         {{--                            action="{{ route('logout') }}"--}}
-                        <form id="logout-form"  action='{{ url("user/logout") }}'  method="POST">
+                        <form id="logout-form"  action='{{ url("/logout") }}'  method="POST">
                             <button style="border: none;
     background: transparent;">logout</button>
                             @csrf

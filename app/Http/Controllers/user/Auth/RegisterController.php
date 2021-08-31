@@ -37,7 +37,7 @@ class RegisterController extends Controller
     public function showUserRegisterForm()
     {
         if (Auth::guard('user')->check()) {
-            return redirect()->intended('/user/dashboard');
+            return redirect()->intended('/dashboard');
         }
         return view('user.auth.register');
     }
@@ -56,7 +56,7 @@ class RegisterController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        return redirect()->intended('user/login');
+        return redirect()->intended('/login');
     }
 
 }

@@ -9,7 +9,7 @@
 
                     <div class="card-body">
                         {{--                        action='{{ url("login/$url") }}'--}}
-                        <form method="POST" action='{{ url("user/login") }}'  aria-label="{{ __('Login') }}">
+                        <form method="POST" action='{{ url("/login") }}'  aria-label="{{ __('Login') }}">
                             @csrf
                             <div class="form-group row">
                                 <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>

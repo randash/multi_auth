@@ -9,7 +9,7 @@
 
                 <div class="card-body">
 
-                        <form method="POST"  action='{{ url("user/register") }}' aria-label="{{ __('Register') }}">
+                        <form method="POST"  action='{{ url("/register") }}' aria-label="{{ __('Register') }}">
                             @csrf
 
                             <div class="form-group row">

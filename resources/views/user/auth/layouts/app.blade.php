@@ -24,10 +24,10 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/user/login') }}">
+            <a class="navbar-brand" href="{{ url('/login') }}">
                 Login
             </a>
-            <a class="navbar-brand" href="{{ url('/user/register') }}">
+            <a class="navbar-brand" href="{{ url('/register') }}">
                 Register
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
