@@ -15,9 +15,11 @@ class loginController extends Controller
 
     public function showUserLoginForm()
     {
+
         if (Auth::guard('user')->check()) {
             return redirect()->intended('/dashboard');
         }
+
         return view('user.auth.login');
     }
 
